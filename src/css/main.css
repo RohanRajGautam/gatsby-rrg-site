@@ -255,7 +255,7 @@ Navbar
     justify-content: flex-end;
   }
   .nav-links li {
-    margin-right: 2rem;
+    margin-right: 3.2rem;
   }
   .nav-links a {
     text-transform: capitalize;
@@ -429,7 +429,7 @@ Hero
 }
 .hero-img {
   display: none;
-  height: 400px;
+  height: 450px;
   width: auto;
 }
 .hero-info h4 {
