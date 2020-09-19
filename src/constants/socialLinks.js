@@ -39,9 +39,8 @@ const links = data.map(link => {
     <li key={link.id}>
       <a
         href={link.url}
+        rel="noopener noreferrer"
         target="_blank"
-        rel="noopener
-noreferrer"
         className="social-link"
       >
         {link.icon}
