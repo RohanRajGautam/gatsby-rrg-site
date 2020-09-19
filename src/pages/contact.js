@@ -5,7 +5,10 @@ import SEO from "../components/SEO"
 const contact = () => {
   return (
     <Layout>
-      <SEO title="Contact" />
+      <SEO
+        title="Contact"
+        description="Contact with Rohan Raj Gautam personally"
+      />
       <section className="contact-page">
         <article className="contact-form">
           <h3>get in touch</h3>
