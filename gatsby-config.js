@@ -15,6 +15,14 @@ module.exports = {
     siteUrl: "https://www.rohanrajgautam.com.np",
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-178510917-1",
+        head: true,
+        anonymize: true,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
