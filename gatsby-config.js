@@ -63,7 +63,7 @@ module.exports = {
         background_color: `#f7f0eb`,
         theme_color: `#2caeba`,
         display: `standalone`,
-        icon: `src/assets/logo.jpeg`,
+        icon: `src/assets/logo.png`,
         include_favicon: false,
         cache_busting_mode: "none",
         crossOrigin: `use-credentials`,
@@ -73,7 +73,7 @@ module.exports = {
       resolve: `gatsby-plugin-offline`,
       options: {
         workboxConfig: {
-          globPatterns: [`src/assets/logo.jpeg`],
+          globPatterns: [`src/assets/logo.png`],
         },
       },
     },
