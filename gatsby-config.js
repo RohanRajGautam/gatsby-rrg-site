@@ -60,7 +60,7 @@ module.exports = {
         description: `This is my personal portfolio site where i share my works and some blogs too.`,
         lang: `en`,
         start_url: `/`,
-        background_color: `#f7f0eb`,
+        background_color: `#E0FCFF`,
         theme_color: `#2caeba`,
         display: `standalone`,
         icon: `src/assets/logo.png`,
