@@ -16,7 +16,10 @@ export default ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Home" description="Find more about rohan raj gautam here" />
+      <SEO
+        title="Home"
+        description="Find more about Rohan Raj Gautam and his works in this site."
+      />
       <Hero />
       <Services />
       <Jobs />

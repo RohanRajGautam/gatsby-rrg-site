@@ -688,6 +688,7 @@ Projects
   background: var(--clr-grey-9);
   color: var(--clr-grey-5);
   margin-right: 0.5rem;
+  margin-bottom: 1rem;
   padding: 0.25rem 0.5rem;
   border-radius: var(--radius);
   text-transform: uppercase;
@@ -777,7 +778,10 @@ Blog
 .blog-img {
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
-  height: 15rem;
+  width: 80%;
+  margin: auto;
+  display: block;
+  padding: 2rem 0;
 }
 .blog-card {
   padding: 1.5rem 1rem;
