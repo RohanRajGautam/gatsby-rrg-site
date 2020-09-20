@@ -12,7 +12,7 @@ module.exports = {
     author: "@rohanrajgautam",
     twitterUsername: "@rohanrajgautam",
     image: "/twitter-img.png",
-    siteUrl: "https://rohanrajgautam.com.np",
+    siteUrl: "https://www.rohanrajgautam.com.np",
   },
   plugins: [
     `gatsby-transformer-sharp`,
@@ -36,6 +36,14 @@ module.exports = {
         //  ONLY ADD TO ARRAY IF YOU HAVE DATA IN STRAPI !!!!
         contentTypes: [`jobs`, `projects`, `blogs`],
         singleTypes: [`about`],
+      },
+    },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://www.rohanrajgautam.com.np",
+        sitemap: "https://www.rohanrajgautam.com.np/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
       },
     },
     {
