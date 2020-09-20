@@ -50,5 +50,30 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Rohan Raj Gautam`,
+        short_name: `RRG`,
+        description: `This is my personal portfolio site where i share my works and some blogs too.`,
+        lang: `en`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#2caeba`,
+        display: `standalone`,
+        icon: `src/assets/logo.jpeg`,
+        include_favicon: false,
+        cache_busting_mode: "none",
+        crossOrigin: `use-credentials`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        workboxConfig: {
+          globPatterns: [`src/assets/logo.jpeg`],
+        },
+      },
+    },
   ],
 }
