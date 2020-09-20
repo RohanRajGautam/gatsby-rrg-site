@@ -1,3 +1,3 @@
 ### RRG Portfolio Site Created using GatsbyJS
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a2d773d4-39ce-4aee-bae9-ac170f54f513/deploy-status)](https://app.netlify.com/sites/rohanrajgautam/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b342a73b-c30d-475d-8862-34f3a7e03470/deploy-status)](https://app.netlify.com/sites/rohanrajgautam/deploys)
