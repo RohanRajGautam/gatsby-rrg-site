@@ -18,7 +18,7 @@ export default ({ data }) => {
     <Layout>
       <SEO
         title="Home"
-        description="Find more about Rohan Raj Gautam and his works in this site."
+        description="I'm a Web Developer & Programmer Living in Kathmandu, Nepal. I make Web Applications usually with Javascript framework."
       />
       <Hero />
       <Services />
