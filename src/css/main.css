@@ -445,13 +445,13 @@ Hero
     content: "";
     position: absolute;
     top: 0;
-    left: 65%;
+    left: 70%;
     right: 0;
     bottom: 0;
     background: var(--clr-white);
   }
   .hero-center {
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(9, 1fr);
   }
 
   .hero h4 {
@@ -465,6 +465,7 @@ Hero
     display: block;
     grid-row: 1/1;
     grid-column: 6/-1;
+    width: 90%;
   }
 }
 @media screen and (min-width: 1170px) {
@@ -895,7 +896,7 @@ About Page
 }
 .about-img {
   margin-bottom: 2rem;
-  height: 25rem;
+  width: 20rem;
 }
 .about-text .section-title {
   margin-bottom: 2rem;
@@ -1041,4 +1042,8 @@ Blog Template
   margin: auto;
   display: block;
   padding: 3rem 0;
+}
+
+*:focus {
+  outline: 0;
 }
