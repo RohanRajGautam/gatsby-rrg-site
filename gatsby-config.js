@@ -15,14 +15,6 @@ module.exports = {
     siteUrl: "https://www.rohanrajgautam.com.np",
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-178510917-1",
-        head: true,
-        anonymize: true,
-      },
-    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
@@ -42,14 +34,6 @@ module.exports = {
         //  ONLY ADD TO ARRAY IF YOU HAVE DATA IN STRAPI !!!!
         contentTypes: [`jobs`, `projects`, `blogs`],
         singleTypes: [`about`],
-      },
-    },
-    {
-      resolve: "gatsby-plugin-robots-txt",
-      options: {
-        host: "https://www.rohanrajgautam.com.np",
-        sitemap: "https://www.rohanrajgautam.com.np/sitemap.xml",
-        policy: [{ userAgent: "*", allow: "/" }],
       },
     },
     {
