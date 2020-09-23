@@ -15,6 +15,14 @@ module.exports = {
     siteUrl: "https://www.rohanrajgautam.com.np",
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-178510917-1",
+        head: true,
+        anonymize: true,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
@@ -29,11 +37,21 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `https://rohanrajgautam.herokuapp.com`,
+        apiURL: process.env.DEPLOY_URL
+          ? `https://rohanrajgautam.herokuapp.com`
+          : `http://localhost:1337`,
         queryLimit: 1000, // Default to 100
         //  ONLY ADD TO ARRAY IF YOU HAVE DATA IN STRAPI !!!!
         contentTypes: [`jobs`, `projects`, `blogs`],
         singleTypes: [`about`],
+      },
+    },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://www.rohanrajgautam.com.np",
+        sitemap: "https://www.rohanrajgautam.com.np/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
       },
     },
     {
@@ -48,6 +66,43 @@ module.exports = {
             family: `Open Sans`,
           },
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Rohan Raj Gautam`,
+        short_name: `RRG`,
+        description: `A highly self-motivated Full Stack Software Developer with a passion for always leaning new things. Find more about him and his works here.`,
+        lang: `en`,
+        start_url: `/`,
+        background_color: `#E0FCFF`,
+        theme_color: `#2caeba`,
+        display: `standalone`,
+
+        icons: [
+          {
+            src: `/assets/rrg-192x192.png`,
+            sizes: `192x192`,
+            type: `image/png`,
+          },
+          {
+            src: `/assets/rrg-512x512.png`,
+            sizes: `512x512`,
+            type: `image/png`,
+          },
+        ],
+        include_favicon: false,
+        cache_busting_mode: "none",
+        crossOrigin: `use-credentials`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        workboxConfig: {
+          globPatterns: [`src/assets/rrg-512x512.png`],
+        },
       },
     },
   ],
