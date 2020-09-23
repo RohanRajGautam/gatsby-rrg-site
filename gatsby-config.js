@@ -1,3 +1,9 @@
+/**
+ * Configure your Gatsby site with this file.
+ *
+ * See: https://www.gatsbyjs.org/docs/gatsby-config/
+ */
+
 module.exports = {
   siteMetadata: {
     title: "Rohan Raj Gautam | Full Stack Developer",
@@ -6,13 +12,9 @@ module.exports = {
     author: "@rohanrajgautam",
     twitterUsername: "@rohanrajgautam",
     image: "/twitter-img.png",
-    siteUrl: "https://rohanrajgautam.netlify.app",
+    siteUrl: "https://www.rohanrajgautam.com.np",
   },
   plugins: [
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -21,6 +23,10 @@ module.exports = {
         anonymize: true,
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -43,8 +49,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://www.rohanrajgautam.netlify.app",
-        sitemap: "https://www.rohanrajgautam.netlify.app/sitemap.xml",
+        host: "https://www.rohanrajgautam.com.np",
+        sitemap: "https://www.rohanrajgautam.com.np/sitemap.xml",
         policy: [{ userAgent: "*", allow: "/" }],
       },
     },
