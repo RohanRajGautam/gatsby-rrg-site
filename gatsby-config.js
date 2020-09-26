@@ -68,42 +68,21 @@ module.exports = {
         ],
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-manifest`,
-    //   options: {
-    //     name: `Rohan Raj Gautam`,
-    //     short_name: `RRG`,
-    //     description: `A highly self-motivated Full Stack Software Developer with a passion for always leaning new things. Find more about him and his works here.`,
-    //     lang: `en`,
-    //     start_url: `/`,
-    //     background_color: `#E0FCFF`,
-    //     theme_color: `#2caeba`,
-    //     display: `standalone`,
-
-    //     icons: [
-    //       {
-    //         src: `/assets/rrg-192x192.png`,
-    //         sizes: `192x192`,
-    //         type: `image/png`,
-    //       },
-    //       {
-    //         src: `/assets/rrg-512x512.png`,
-    //         sizes: `512x512`,
-    //         type: `image/png`,
-    //       },
-    //     ],
-    //     include_favicon: false,
-    //     cache_busting_mode: "none",
-    //     crossOrigin: `use-credentials`,
-    //   },
-    // },
-    // {
-    //   resolve: `gatsby-plugin-offline`,
-    //   options: {
-    //     workboxConfig: {
-    //       globPatterns: [`src/assets/rrg-512x512.png`],
-    //     },
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Rohan Raj Gautam`,
+        short_name: `RRG`,
+        start_url: `/`,
+        background_color: `#E0FCFF`,
+        theme_color: `#2caeba`,
+        display: `standalone`,
+        icon: `src/assets/icon.png`,
+        include_favicon: false,
+        cache_busting_mode: "none",
+        crossOrigin: `use-credentials`,
+      },
+    },
+    `gatsby-plugin-offline`,
   ],
 }
