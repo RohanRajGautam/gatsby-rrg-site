@@ -18,7 +18,7 @@ export default ({ data }) => {
     <Layout>
       <SEO
         title="Home"
-        description="I'm a Full Stack Web Developer & Programmer Living in Kathmandu, Nepal. I make Web Applications usually with Javascript framework."
+        description="A highly self-motivated Full Stack Software Developer with a passion for always leaning new things. Find more about him and his works here."
       />
       <Hero />
       <Services />
