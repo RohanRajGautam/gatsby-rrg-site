@@ -13,7 +13,7 @@ const contact = () => {
         <article className="contact-form">
           <h3>get in touch</h3>
           <form
-            action="https://formspree.io/rohanrajgautam@gmail.com"
+            action="https://formspree.io/rohangautamdev@gmail.com"
             method="POST"
           >
             <div className="form-group">
