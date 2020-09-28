@@ -196,7 +196,7 @@ p {
 }
 .social-link {
   font-size: 1.75rem;
-  color: var(--clr-grey-1);
+  color: var(--clr-grey-5);
   transition: var(--transition);
 }
 .social-link:hover {
@@ -499,6 +499,7 @@ Services
 .service-icon {
   font-size: 2rem;
   margin-bottom: 1.5rem;
+  color: var(--clr-grey-5);
 }
 .service .underline {
   width: 3rem;
