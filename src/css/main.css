@@ -864,6 +864,7 @@ Pages
 .blog-page,
 .error-page,
 .about-page,
+.cv-page,
 .contact-page {
   background: var(--clr-grey-10);
   min-height: calc(100vh - 5rem - 9rem);
@@ -878,6 +879,11 @@ Pages
   text-transform: uppercase;
   color: var(--clr-primary-1);
   margin-bottom: 2rem;
+}
+.cv {
+  display: grid;
+  place-items: center;
+  padding: 3rem 0;
 }
 /*
 ===============

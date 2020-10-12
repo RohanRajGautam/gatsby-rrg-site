@@ -22,7 +22,12 @@ const data = [
     url: "/blog/",
   },
   {
-    id: 5,
+    id:5,
+    text: "CV",
+    url: "/cv/",
+  },
+  {
+    id: 6,
     text: "contact",
     url: "/contact/",
   },
