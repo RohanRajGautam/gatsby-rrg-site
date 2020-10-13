@@ -32,11 +32,11 @@ const Hero = () => {
             <div className="underline"></div>
             <h1>i'm rohan</h1>
             <h4>a passionate web developer</h4>
-            <Link to="/contact" className="btn">
+            <Link to="/contact" className="btn" style={{marginRight:'1rem'}}>
               hire me
             </Link>
             <Link to="/cv" className="btn">
-              See CV
+              view CV
             </Link>
             <SocialLinks />
           </div>

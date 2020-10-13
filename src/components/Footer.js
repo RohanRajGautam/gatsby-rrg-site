@@ -7,7 +7,7 @@ const Footer = () => {
         <SocialLinks styleClass="footer-links"></SocialLinks>
         <h4>
           copyright &copy; {new Date().getFullYear()}
-          <span> Rohan Raj Gautam </span> all rights reserved
+          <span><a href="https://rrg.com.np/" rel="noopener noreferrer" target="blank"> Rohan Raj Gautam </a></span> all rights reserved
         </h4>
       </div>
     </footer>
