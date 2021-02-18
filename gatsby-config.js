@@ -6,7 +6,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: "Rohan Raj Gautam | Full Stack Developer",
+    title: "Rohan Raj Gautam",
     description:
       "A highly self-motivated Full Stack Software Developer with a passion for always leaning new things. Find more about him and his works here.",
     author: "@rohanrajgautam",
