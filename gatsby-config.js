@@ -37,9 +37,7 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: process.env.DEPLOY_URL
-          ? `https://rohanrajgautam.herokuapp.com`
-          : `http://localhost:1337`,
+        apiURL: `https://rohanrajgautam.herokuapp.com`,
         queryLimit: 1000, // Default to 100
         //  ONLY ADD TO ARRAY IF YOU HAVE DATA IN STRAPI !!!!
         contentTypes: [`jobs`, `projects`, `blogs`],
