@@ -550,9 +550,11 @@ Jobs
 }
 .btn-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-bottom: 4rem;
+  gap: 1rem;
 }
 .job-btn {
   background: transparent;
@@ -572,6 +574,7 @@ Jobs
   box-shadow: 0 2px var(--clr-primary-5);
 }
 .active-btn {
+  width: fit-content;
   color: var(--clr-primary-5);
   box-shadow: 0 2px var(--clr-primary-5);
 }
@@ -618,6 +621,7 @@ Jobs
   .btn-container {
     flex-direction: column;
     justify-content: flex-start;
+    gap: unset;
   }
   .job-btn {
     margin-bottom: 1rem;
