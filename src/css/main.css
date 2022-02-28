@@ -565,6 +565,7 @@ Jobs
   cursor: pointer;
   padding: 0.25rem 0;
   line-height: 1.5;
+  padding-left: 0.5rem;
 }
 .job-btn:hover {
   color: var(--clr-primary-5);
@@ -628,7 +629,7 @@ Jobs
   }
   .job-btn:hover {
     box-shadow: -2px 0 var(--clr-primary-5);
-    padding-left: 0.5rem;
+    margin-left: 0.5rem;
   }
 }
 
