@@ -8,7 +8,7 @@ module.exports = {
   siteMetadata: {
     title: "Rohan Raj Gautam",
     description:
-      "A highly self-motivated Software Engineer with a passion for always leaning new things. Find more about him and his works here.",
+      "A highly self-motivated software engineer with a passion for always leaning new things. Find more about him and his works here.",
     author: "@rohanrajgautam",
     twitterUsername: "@rohanrajgautam",
     image: "/twitter-img.png",
