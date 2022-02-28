@@ -31,8 +31,8 @@ const Hero = () => {
             <h2>Hi !</h2>
             <div className="underline"></div>
             <h1>i'm rohan</h1>
-            <h4>a passionate web developer</h4>
-            <Link to="/contact" className="btn" style={{marginRight:'1rem'}}>
+            <h4>Software Engineer</h4>
+            <Link to="/contact" className="btn" style={{ marginRight: "1rem" }}>
               hire me
             </Link>
             <Link to="/cv" className="btn">
@@ -41,7 +41,12 @@ const Hero = () => {
             <SocialLinks />
           </div>
         </article>
-        <Image objectFit="cover" fluid={fluid} className="hero-img" />
+        <Image
+          objectFit="cover"
+          fluid={fluid}
+          className="hero-img"
+          alt="hero-img"
+        />
       </div>
     </header>
   )
